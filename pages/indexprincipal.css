@@ -1,0 +1,55 @@
+/* Estilos generales */
+.menu-principal {
+    width: 200px; /* Ancho del menú */
+    background-color: #f0f0f0; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+}
+
+.menu-principal ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0;
+}
+
+.menu-principal li {
+    padding: 8px 0; /* Espaciado alrededor de los elementos de la lista */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los elementos */
+    position: relative; /* Establece la posición relativa */
+}
+
+/* Estilos para los elementos de primer nivel */
+.menu-principal > ul > li {
+    border-bottom: 1px solid #ddd; /* Línea divisoria entre elementos */
+}
+
+/* Estilos para los elementos de segundo nivel */
+.menu-principal ul ul {
+    display: none; /* Oculta los submenús por defecto */
+    position: absolute; /* Establece la posición absoluta */
+    top: 0; /* Alinea en la parte superior del elemento padre */
+    left: 200px; /* Alinea a la derecha del elemento padre */
+    background-color: #fff; /* Color de fondo */
+}
+
+.menu-principal ul ul li {
+    padding: 8px 15px; /* Espaciado interno */
+}
+
+/* Mostrar submenús cuando se pasa el cursor */
+.menu-principal li:hover > ul {
+    display: block;
+}
+
+/* Estilos para el botón cerrar sesión */
+.menu-principal button {
+    margin-top: 10px; /* Espaciado superior */
+    padding: 5px 10px; /* Espaciado interno */
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Estilos para el botón cerrar sesión al pasar el cursor */
+.menu-principal button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor */
+}
